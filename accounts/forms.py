@@ -1,0 +1,24 @@
+from django import forms
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+
+from.models import CustomUser
+
+class CustomUserCreationForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = CustomUser
+        #fields = UserCreationForm.Meta.fields + ("age",)
+        fields = ("username", "email", "age")  #kaytta fln gzkcek pralolar yok brda cnku o defualtta var
+
+class CustomUserChangeForm(UserChangeForm):
+    class Meta:
+        model = CustomUser
+        #fields = UserChangeForm.Meta.fields
+        fields = ("username", "email", "age")
+
+
+#manage.py makemigrations users
+#migrate
+
+
+#parola degstrme
+#parola resetleme mail
