@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     # Apps
     "accounts",
-    "core",
+    "votes",
 ]
 
 MIDDLEWARE = [
