@@ -1,2 +1,1 @@
-# Features
- * Custom User -> Abtract User
+### Example Django web application showcasing polls with voting functionality
